@@ -64,9 +64,6 @@ const Layout: React.FC<LayoutProps> = ({ pageTitle, children }) => {
       <main>
         <h1 className={heading}>{pageTitle}</h1>
         {children}
-        {console.log(data)}
-        {console.log(data.site.siteMetadata.title)}
-        {console.log(data.siteBuildMetadata.buildTime)}
       </main>
     </div>
   );

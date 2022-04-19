@@ -12,7 +12,6 @@ const IndexPage = () => {
           <p>I'm making this by following the Gatsby Tutorial.</p>
           <p>Below picture was taken by myself at Tenerife.</p>
           <Tree />
-          {/* <div style={{ height: "1rem" }} /> */}
           <p>Kitten, on the other hand, is a picture from internet.</p>
           <Kitten />
           <p>

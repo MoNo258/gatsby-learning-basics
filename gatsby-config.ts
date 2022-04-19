@@ -26,6 +26,7 @@ const config: GatsbyConfig = {
         path: `${path}/blog/`,
       },
     },
+    `gatsby-plugin-mdx`,
   ],
 };
 
