@@ -1,12 +1,15 @@
 import type { GatsbyConfig } from "gatsby";
 
+const path = __dirname.replace("\\.cache\\compiled", "");
+
 const config: GatsbyConfig = {
   siteMetadata: {
     // siteUrl: `https://www.yourdomain.tld`,
     title: "Gatsby basics Application",
   },
-  // plugins: ["gatsby-plugin-image", "gatsby-plugin-sharp"],
   plugins: [
+    `gatsby-plugin-gatsby-cloud`,
+    `gatsby-plugin-image`,
     {
       resolve: `gatsby-plugin-sharp`,
       options: {
@@ -16,12 +19,11 @@ const config: GatsbyConfig = {
         },
       },
     },
-    `gatsby-plugin-image`,
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: `blog`,
-        path: `${__dirname}/blog/`,
+        name: "blog",
+        path: `${path}/blog/`,
       },
     },
   ],
