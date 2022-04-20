@@ -1,6 +1,9 @@
 import type { GatsbyConfig } from "gatsby";
 
-const path = __dirname.replace("\\.cache\\compiled", "");
+const path =
+  process.env.NODE_ENV === "development"
+    ? __dirname.replace("\\.cache\\compiled", "")
+    : __dirname;
 
 const config: GatsbyConfig = {
   siteMetadata: {
