@@ -12,8 +12,8 @@ const config: GatsbyConfig = {
     title: "Gatsby basics Application",
   },
   plugins: [
-    `gatsby-plugin-gatsby-cloud`,
-    `gatsby-plugin-image`,
+    "gatsby-plugin-gatsby-cloud",
+    "gatsby-plugin-image",
     {
       resolve: "gatsby-plugin-sharp",
       options: {
