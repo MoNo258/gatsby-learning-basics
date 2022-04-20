@@ -11,7 +11,7 @@ const config: GatsbyConfig = {
     `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-image`,
     {
-      resolve: `gatsby-plugin-sharp`,
+      resolve: "gatsby-plugin-sharp",
       options: {
         defaults: {
           placeholder: `blurred`,
@@ -22,11 +22,12 @@ const config: GatsbyConfig = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "blog",
+        name: `blog`,
         path: `${path}/blog/`,
       },
     },
-    `gatsby-plugin-mdx`,
+    "gatsby-plugin-mdx",
+    "gatsby-transformer-sharp",
   ],
 };
 
