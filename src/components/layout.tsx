@@ -2,6 +2,7 @@ import { graphql, Link, useStaticQuery } from "gatsby";
 import React from "react";
 import {
   container,
+  footer,
   heading,
   navLinkItem,
   navLinks,
@@ -65,6 +66,11 @@ const Layout: React.FC<LayoutProps> = ({ pageTitle, children }) => {
         <h1 className={heading}>{pageTitle}</h1>
         {children}
       </main>
+      <footer>
+        <p className={footer}>
+          This page was created for practising purposes with Gatsby Tutorial.
+        </p>
+      </footer>
     </div>
   );
 };

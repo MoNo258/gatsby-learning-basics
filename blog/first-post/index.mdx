@@ -7,9 +7,35 @@ hero_image_credit_text: "Omkar Rane"
 hero_image_credit_link: "https://unsplash.com/photos/pEg7dhMQr7E"
 ---
 
-This is my first blog post! Isn't it _great_?
-Bla bla list of **things** are:
+## My first post post
 
-- first thing on the list
+This is my first blog post! Isn't it _great_?<br />
+
+Unordered list of **things** are (using dash):
+
+- First thing on the list
 - 2nd
 - And last one for the moment
+
+Ordered list of **things** are:
+
+1. First thing on the list
+2. 2nd
+3. And last one for the moment
+
+---
+
+#### How this site was created
+
+This site was made with Gatsby tutorial available under this [link](https://www.gatsbyjs.com/docs/tutorial/).<br />
+The difference though is that I created a new Gatsby site using the minimal TypeScript starter.
+
+---
+
+#### Interesting thing about this Gatsby tutorial
+
+I had issues with deploying this app, there was an error about wrong filename (directory `.cache/compiled` was for some reason included in the path).<br />
+The workaround for that was to use `replace`.
+Yet, although application worked on _dev_ and was build properly (`gatsby build`), it was still not working while publishing on **Gatsby Cloud**.<br />
+The final solution was to use `path` option like this: `path.join(".cache", "compiled")`.
+It turned out that problem is connected to operating system and what is used to point to directory: _slash_ or _backslash_.
