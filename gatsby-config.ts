@@ -1,9 +1,12 @@
 import type { GatsbyConfig } from "gatsby";
+import path from "path";
 
-const path =
+const cacheFolder = path.join(".cache", "compiled");
+
+const dirnameNew =
   process.env.NODE_ENV === "production" ||
   process.env.NODE_ENV === "development"
-    ? __dirname.replace("\\.cache\\compiled", "")
+    ? __dirname.replace(cacheFolder, "")
     : __dirname;
 
 const config: GatsbyConfig = {
@@ -27,7 +30,7 @@ const config: GatsbyConfig = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: `blog`,
-        path: `${path}/blog/`,
+        path: `${dirnameNew}/blog/`,
       },
     },
     "gatsby-plugin-mdx",

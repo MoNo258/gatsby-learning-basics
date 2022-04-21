@@ -55,4 +55,4 @@ Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cl
 
 ## 🚀 Production app on Gatsby Cloud
 
-My app is running at https://gatsbylearningbasicsmain.gatsbyjs.io/ 🚀.
+My app is running at https://mono258gatsbybasics.gatsbyjs.io/ 🚀.
