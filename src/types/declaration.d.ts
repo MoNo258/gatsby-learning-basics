@@ -38,6 +38,7 @@ interface GraphQLNodesMdx {
     hero_image_credit_text: string;
     hero_image: ImageDataLike;
     // hero_image: GatsbyImageHero;
+    example_tag: string;
   };
   body: string;
 }

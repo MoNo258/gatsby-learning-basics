@@ -3,6 +3,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import React from "react";
 import Layout from "../../components/layout";
+import { smallText } from "./{mdx.slug}.module.css";
 
 type BlogPageProps = GraphQLNode;
 const BlogPost: React.FC<BlogPageProps> = ({ data }) => {
@@ -13,6 +14,7 @@ const BlogPost: React.FC<BlogPageProps> = ({ data }) => {
   return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
       <p>Created: {data.mdx.frontmatter.date}</p>
+      <p className={smallText}>Notes: {data.mdx.frontmatter.example_tag}</p>
       <GatsbyImage image={image} alt={data.mdx.frontmatter.hero_image_alt} />
       <small>
         Photo credit:{" "}
@@ -38,6 +40,7 @@ export const query = graphql`
             gatsbyImageData
           }
         }
+        example_tag
       }
       body
     }
