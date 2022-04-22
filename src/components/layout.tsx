@@ -1,6 +1,7 @@
 import { graphql, Link, useStaticQuery } from "gatsby";
 import React from "react";
 import {
+  active,
   container,
   footer,
   heading,
@@ -46,17 +47,17 @@ const Layout: React.FC<LayoutProps> = ({ pageTitle, children }) => {
       <nav>
         <ul className={navLinks}>
           <li className={navLinkItem}>
-            <Link to="/" className={navLinkText}>
+            <Link to="/" className={navLinkText} activeClassName={active}>
               Home
             </Link>
           </li>
           <li className={navLinkItem}>
-            <Link to="/about" className={navLinkText}>
+            <Link to="/about" className={navLinkText} activeClassName={active}>
               About
             </Link>
           </li>
           <li className={navLinkItem}>
-            <Link to="/blog" className={navLinkText}>
+            <Link to="/blog" className={navLinkText} activeClassName={active}>
               Blog
             </Link>
           </li>
