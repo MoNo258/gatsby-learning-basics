@@ -1,17 +1,5 @@
 declare module "*.module.css";
 
-interface GraphQLNodes {
-  absolutePath: string;
-  name: string;
-}
-interface GraphQLAllFiles {
-  data: {
-    allFile: {
-      nodes: NodesData[];
-    };
-  };
-}
-
 interface GraphQLNodesMdxAll {
   frontmatter: {
     date: string;

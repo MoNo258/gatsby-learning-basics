@@ -1,5 +1,6 @@
 import { graphql } from "gatsby";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { GatsbyImage } from "gatsby-plugin-image";
+// import { getImage } from "gatsby-plugin-image";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import React from "react";
 import Layout from "../../components/layout";
@@ -8,9 +9,10 @@ import { smallText } from "./{mdx.slug}.module.css";
 type BlogPageProps = GraphQLNode;
 const BlogPost: React.FC<BlogPageProps> = ({ data }) => {
   // getting image information with helper function
-  const image = getImage(data.mdx.frontmatter.hero_image)!;
+  // this is additional complication for unit tests
+  // const image = getImage(data.mdx.frontmatter.hero_image)!;
   // the same information without helper function
-  // const image = data.mdx.frontmatter.hero_image.childImageSharp.gatsbyImageData;
+  const image = data.mdx.frontmatter.hero_image.childImageSharp.gatsbyImageData;
   return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
       <p>Created: {data.mdx.frontmatter.date}</p>
