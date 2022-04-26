@@ -10,6 +10,7 @@ import {
   navLinkText,
   siteTitle,
 } from "./layout.module.css";
+import NavBar from "./nav-bar";
 
 type LayoutProps = {
   pageTitle: string;
@@ -62,6 +63,7 @@ const Layout: React.FC<LayoutProps> = ({ pageTitle, children }) => {
             </Link>
           </li>
         </ul>
+        <NavBar />
       </nav>
       <main>
         <h1 className={heading}>{pageTitle}</h1>
