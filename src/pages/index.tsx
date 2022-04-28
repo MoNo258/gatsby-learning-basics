@@ -2,7 +2,8 @@ import * as React from "react";
 import { Kitten } from "../components/kitten";
 import Layout from "../components/layout";
 import { Tree } from "../components/tree";
-
+// import type { PageProps } from "gatsby";
+// const IndexPage = ({ path }: PageProps) => {
 const IndexPage = () => {
   return (
     <Layout
@@ -30,3 +31,6 @@ const IndexPage = () => {
 };
 
 export default IndexPage;
+
+// useful information for using TypeScript in Gatsby:
+// https://www.gatsbyjs.com/docs/how-to/custom-configuration/typescript/
