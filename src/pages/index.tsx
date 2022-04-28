@@ -31,6 +31,3 @@ const IndexPage = () => {
 };
 
 export default IndexPage;
-
-// useful information for using TypeScript in Gatsby:
-// https://www.gatsbyjs.com/docs/how-to/custom-configuration/typescript/

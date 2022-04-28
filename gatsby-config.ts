@@ -1,6 +1,9 @@
 import type { GatsbyConfig } from "gatsby";
 import path from "path";
 
+// useful information for using TypeScript in Gatsby:
+// https://www.gatsbyjs.com/docs/how-to/custom-configuration/typescript/
+
 const config: GatsbyConfig = {
   siteMetadata: {
     // siteUrl: `https://www.yourdomain.tld`,
